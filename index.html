@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Junbi Matcha Event Catering</title>
+<meta name="description" content="Bring the Junbi matcha experience to your next event, from corporate gatherings to weddings and birthdays: on-site matcha bars, Matcha 101 workshops, and drop-off catering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="logo" href="#top" aria-label="Junbi"><img src="images/logo-yellow.png" alt="Junbi"></a>
+  <nav aria-label="Main">
+    <a href="#experiences">Experiences</a>
+    <a href="#why">Why Junbi</a>
+    <a href="#events">Events</a>
+  </nav>
+  <a class="btn btn-dark btn-sm" href="#inquire">Plan Your Event</a>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Corporate events, weddings &amp; celebrations</p>
+    <h1>Elevate Your Next Event with Junbi Matcha</h1>
+    <p class="lead">From handcrafted matcha drinks to interactive workshops, bring a memorable matcha experience to your team.</p>
+    <div class="cta-row">
+      <a class="btn btn-dark" href="#inquire">Plan Your Event <span aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="#experiences">Explore Our Experiences</a>
+    </div>
+  </div>
+  <div class="hero-visual" id="inquire">
+    <img class="hero-img" src="images/hero.svg" alt="Junbi matcha bar with drinks and a whisked bowl">
+    <form id="inquiry" class="form hero-form" novalidate>
+      <h2>Request a custom quote</h2>
+      <p class="form-sub">Tell us about your event and we'll reply with recommendations and a quote. We cater events of 25 or more guests.</p>
+      <label>Name *<input name="name" required autocomplete="name"></label>
+      <label>Email *<input name="email" type="email" required autocomplete="email"></label>
+      <label>Type of event *
+        <select name="eventType" id="eventType" required>
+          <option value="">Select type</option>
+          <option>Corporate event</option><option>Wedding</option><option>Birthday</option><option>Private party or celebration</option><option>Other</option>
+        </select>
+      </label>
+      <label>Event date<input name="date" type="date"></label>
+      <label class="wide">Event location *<input name="location" required placeholder="City, venue, or address (helps us plan travel)" autocomplete="off"></label>
+      <label class="wide" id="companyWrap" hidden>Company *<input name="company" id="company" autocomplete="organization"></label>
+      <label>Experience
+        <select name="interest" id="interest">
+          <option value="">Not sure yet</option>
+          <option>On-Site Matcha Bar</option><option>Matcha 101 Workshop</option><option>Matcha Drop-Off Catering</option>
+        </select>
+      </label>
+      <label>Guests (25 minimum) *
+        <select name="guests" required>
+          <option value="">Select range</option>
+          <option>25–50</option><option>51–100</option><option>101–250</option><option>250+</option>
+        </select>
+      </label>
+      <label class="wide">Anything else we should know? (optional)<input name="details" placeholder="Special requests, dietary needs, anything helpful"></label>
+      <button class="btn btn-dark wide" type="submit">Send Inquiry <span aria-hidden="true">→</span></button>
+      <p class="note wide" id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section class="section" id="experiences">
+  <p class="eyebrow center">Our Experiences</p>
+  <h2 class="center">Bring The Junbi Matcha Experience To Your Next Event</h2>
+  <p class="sub center">Junbi is more than a beverage vendor. Choose the format that fits your team, your space, and your moment.</p>
+
+  <div class="cards">
+    <article class="card" id="bar">
+      <figure class="ph ph-a"><img src="images/hero.svg" alt="On-site Junbi matcha bar"></figure>
+      <div class="card-body">
+        <p class="tag">Matcha Catering</p>
+        <h3>On-Site Matcha Bar</h3>
+        <p>Bring the Junbi experience directly to your event.</p>
+        <ul class="checks">
+          <li>Freshly Prepared Matcha Beverages</li>
+          <li>Professional On-Site Service</li>
+          <li>Beautiful Presentation</li>
+          <li>Customizable Event Experiences</li>
+          <li>Suitable For Gatherings Of Different Sizes</li>
+        </ul>
+        <a class="btn btn-sage" href="#inquire" data-interest="On-Site Matcha Bar">Request A Quote <span aria-hidden="true">→</span></a>
+        <a class="dl" href="downloads/Junbi-On-Site-Matcha-Bar.pdf" target="_blank" rel="noopener">↗ View the one-pager (PDF)</a>
+      </div>
+    </article>
+
+    <article class="card" id="workshop">
+      <figure class="ph ph-b"><img src="images/workshop.svg" alt="Matcha bowl and bamboo whisk"></figure>
+      <div class="card-body">
+        <p class="tag">Interactive Experience</p>
+        <h3>Matcha 101 Workshop</h3>
+        <p>An interactive experience where participants learn about matcha and discover the art of preparing it.</p>
+        <ul class="checks">
+          <li>Introduction To Matcha</li>
+          <li>Guided Preparation</li>
+          <li>Interactive Team-Building Experience</li>
+          <li>Suitable For Team Events, Celebrations And Company Events</li>
+        </ul>
+        <a class="btn btn-sage" href="https://www.instagram.com/p/DTTD--QgNFY/?hl=en" target="_blank" rel="noopener noreferrer" data-video="https://www.instagram.com/p/DTTD--QgNFY/embed/">See It In Action <span aria-hidden="true">→</span></a>
+        <a class="dl" href="downloads/Junbi-Matcha-101-Workshop.pdf" target="_blank" rel="noopener">↗ View the one-pager (PDF)</a>
+      </div>
+    </article>
+
+    <article class="card" id="dropoff">
+      <figure class="ph ph-c"><img src="images/dropoff.svg" alt="Tray of Junbi matcha drinks"></figure>
+      <div class="card-body">
+        <p class="tag">Delivered To You</p>
+        <h3>Matcha Drop-Off Catering</h3>
+        <p>A convenient option for meetings, celebrations, and office gatherings.</p>
+        <ul class="checks">
+          <li>Junbi Matcha Beverages Delivered To Your Event</li>
+          <li>Convenient Ordering And Coordination</li>
+          <li>Ideal For Meetings, Parties And Employee Appreciation</li>
+        </ul>
+        <a class="btn btn-sage" href="#inquire" data-interest="Matcha Drop-Off Catering">Inquire About Catering <span aria-hidden="true">→</span></a>
+        <a class="dl" href="downloads/Junbi-Matcha-Drop-Off-Catering.pdf" target="_blank" rel="noopener">↗ View the one-pager (PDF)</a>
+      </div>
+    </article>
+  </div>
+  <p class="share-note center">Want to bring Junbi to your team? Download a one-pager for any experience and share it with your manager or teammates.</p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" aria-label="Junbi moments">
+  <img src="images/pour.svg" alt="Junbi matcha drink"><img src="images/hero.svg" alt="Junbi matcha bar"><img src="images/dropoff.svg" alt="Junbi drinks tray"><img src="images/workshop.svg" alt="Matcha whisking"><img src="images/pour.svg" alt="Junbi matcha drink">
+</section>
+
+<!-- WHY JUNBI -->
+<section class="section band" id="why">
+  <p class="eyebrow center">Why Junbi</p>
+  <h2 class="center">A matcha experience your guests will remember</h2>
+  <div class="pillars">
+    <div><span class="icon" aria-hidden="true">🍃</span><h3>Premium matcha quality</h3><p>Matcha is our craft. Every drink is made with care, and every detail is considered.</p></div>
+    <div><span class="icon" aria-hidden="true">✨</span><h3>Memorable experiences</h3><p>We bring people together around something thoughtful, beautiful, and a little different.</p></div>
+    <div><span class="icon" aria-hidden="true">🤝</span><h3>Professional execution</h3><p>Clear coordination from first inquiry to event day, so you can focus on your guests.</p></div>
+    <div><span class="icon" aria-hidden="true">🗓️</span><h3>Flexible formats</h3><p>A bar, a workshop, or a drop-off. We shape the experience around your event.</p></div>
+    <div><span class="icon" aria-hidden="true">💚</span><h3>Guests remember it</h3><p>The kind of moment that makes people feel appreciated and connected.</p></div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="section" id="events">
+  <p class="eyebrow center">Events we serve</p>
+  <h2 class="center">Team Building Events that are Fun!</h2>
+  <div class="events">
+    <div class="event"><h3>Employee appreciation</h3><p>Say thank you with something genuinely special.</p></div>
+    <div class="event"><h3>Corporate celebrations</h3><p>Launches, milestones, and company gatherings.</p></div>
+    <div class="event"><h3>Team building</h3><p>A shared, hands-on activity that gets people talking.</p></div>
+    <div class="event"><h3>Meetings &amp; office gatherings</h3><p>An easy upgrade for the days people come together.</p></div>
+    <div class="event"><h3>Weddings</h3><p>A memorable moment for your guests to enjoy together.</p></div>
+    <div class="event"><h3>Birthdays &amp; private celebrations</h3><p>Make the occasion feel special, big or small.</p></div>
+  </div>
+  <p class="sub center small">Planning for yourself, your team, or on behalf of a client? We work with event planners and agencies too.</p>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="section closing">
+  <h2 class="center">Ready to bring Junbi to your event?</h2>
+  <p class="sub center">Tell us about it and we'll take it from there.</p>
+  <p class="center"><a class="btn btn-dark" href="#inquire" data-focus>Request a Quote <span aria-hidden="true">→</span></a></p>
+</section>
+
+</main>
+
+<footer class="footer">
+  <a class="logo" href="#top" aria-label="Junbi"><img src="images/logo-yellow.png" alt="Junbi"></a>
+  <p>© <span id="yr"></span> Junbi. Events &amp; experiences. <a href="mailto:seattle@junbishop.com">seattle@junbishop.com</a></p>
+</footer>
+
+<dialog id="videoDialog" class="video-dialog" aria-label="Matcha 101 Workshop video">
+  <button type="button" class="vclose" id="videoClose" aria-label="Close video">×</button>
+  <div class="vwrap" id="videoWrap"></div>
+  <a class="vlink" href="https://www.instagram.com/p/DTTD--QgNFY/?hl=en" target="_blank" rel="noopener noreferrer">Watch on Instagram</a>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
