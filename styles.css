@@ -323,3 +323,57 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,.btn:focus-visib
   .hero-video{justify-self:stretch;width:100%;grid-column:2}
   .hero-copy{grid-column:1}
 }
+
+/* ===== DESIGN POLISH PASS: one spacing rhythm, consistent heading scale, aligned rows ===== */
+:root{--sec-y:88px;--sec-y-m:56px}
+.section{padding-top:var(--sec-y);padding-bottom:var(--sec-y)}
+.section h2{font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.12;max-width:20em;margin-left:auto;margin-right:auto;text-wrap:balance}
+.section .eyebrow{margin-bottom:.8em}
+.section .sub{margin-bottom:3rem}
+
+/* hero: bigger headline so the copy fills its half; copy aligned to the page grid */
+@media (min-width:1181px){
+  .hero-copy{padding:0 4vw 0 max(5vw,calc((100vw - 1240px)/2 + 5vw));max-width:none}
+  .hero-copy h1{font-size:clamp(2.8rem,4.6vw,4.4rem);line-height:1.04;margin-bottom:.45em}
+  .hero .lead{font-size:clamp(1.1rem,1.5vw,1.35rem);max-width:30em;line-height:1.55}
+  .hero .cta-row{margin-top:2rem}
+}
+
+/* experience cards: titles reserve two lines so descriptions, lists and buttons line up across all three */
+@media (min-width:981px){
+  .card-body h3{min-height:2.3em;display:flex;align-items:flex-end}
+  .card-body .tag{min-height:1.2em}
+}
+.card{box-shadow:0 2px 14px rgba(20,30,24,.06)}
+
+/* why junbi: equal columns, headings share a baseline row */
+.pillars{align-items:start}
+@media (min-width:981px){
+  .pillars h3{min-height:2.4em;display:flex;align-items:flex-end;justify-content:center;font-size:1.1rem}
+}
+
+/* form: no phantom gap under the button */
+.hero-form .note:empty,.form .note:empty{display:none}
+.inquire-wrap .hero-form{padding:36px}
+.inquire-wrap .form-sub{margin-bottom:6px}
+
+/* photo strip: always full width, never an empty cell */
+.gallery{gap:0}
+@media (max-width:980px){
+  .gallery{grid-template-columns:repeat(2,1fr);grid-template-rows:150px 150px;height:300px}
+  .gallery img{height:150px}
+  .gallery img:nth-child(n+3){display:block}
+  .gallery img:nth-child(5){display:none}
+}
+
+/* FAQ: a little more air between questions and a comfortable reading width */
+.faq-list{max-width:780px}
+.faq details{margin-bottom:14px}
+
+/* closing banner matches the rhythm */
+.closing{padding-top:72px;padding-bottom:72px}
+
+@media (max-width:980px){
+  .section{padding-top:var(--sec-y-m);padding-bottom:var(--sec-y-m)}
+  .section .sub{margin-bottom:2rem}
+}
