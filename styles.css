@@ -232,3 +232,6 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,.btn:focus-visib
 /* card hierarchy: title leads, small label supports */
 .card .tag{font-size:.72rem;font-weight:600;letter-spacing:.12em;white-space:nowrap;color:#6f8a76;margin-bottom:.35em}
 .card-body h3{font-size:1.6rem;line-height:1.15;margin:0 0 .5rem}
+
+/* section labels: quieter so the headline leads */
+.eyebrow{font-weight:600;letter-spacing:.14em;margin-bottom:.7em}
