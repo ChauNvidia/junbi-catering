@@ -274,3 +274,25 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,.btn:focus-visib
 .form label{min-width:0}
 .form input,.form select{min-width:0;width:100%;box-sizing:border-box}
 @media (min-width:1321px){.hero{grid-template-columns:1fr minmax(300px,min(27vw,400px)) minmax(480px,1.05fr)}}
+
+/* FINAL hero: fixed height; video column is exactly as wide as the vertical video, so it fills edge to edge with no crop and no bars */
+@media (min-width:1181px){
+  .hero{--hh:700px;grid-template-columns:1fr calc(var(--hh) * 540 / 930) minmax(440px,.95fr);grid-template-rows:var(--hh);min-height:0;height:var(--hh)}
+  .hero-video{min-height:0;height:var(--hh);background:#000}
+  .hero-video video{object-fit:cover}
+  .hero-visual{padding:0 3vw 0 2vw;height:var(--hh);align-content:center}
+  .hero-copy{padding:0 2.5vw 0 4vw}
+}
+@media (max-width:1180px){
+  .hero{grid-template-columns:1fr;height:auto}
+  .hero-video{order:2;height:min(70vh,560px);min-height:0}
+  .hero-visual{order:1}
+}
+
+/* phones and tablets: video sits right under the headline at its natural shape; form follows */
+@media (max-width:1180px){
+  .hero-copy{order:1;padding:36px 5vw 24px}
+  .hero-video{order:2;height:auto;display:grid;place-items:center;padding:8px 5vw 32px;background:var(--green)}
+  .hero-video video{position:static;inset:auto;width:auto;max-width:100%;height:min(68vh,600px);aspect-ratio:540/930;object-fit:cover;border-radius:16px;box-shadow:0 12px 36px rgba(20,30,24,.35)}
+  .hero-visual{order:3;padding:28px 5vw}
+}
