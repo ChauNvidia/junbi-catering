@@ -377,3 +377,14 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,.btn:focus-visib
   .section{padding-top:var(--sec-y-m);padding-bottom:var(--sec-y-m)}
   .section .sub{margin-bottom:2rem}
 }
+
+/* hero: quick facts fill the left side and answer planners' first questions */
+.facts{list-style:none;margin:2.4rem 0 0;padding:1.4rem 0 0;border-top:1px solid rgba(255,255,255,.28);display:flex;gap:2.2rem;flex-wrap:wrap}
+.facts li{display:flex;flex-direction:column;gap:2px}
+.facts strong{font-size:1.9rem;line-height:1;color:var(--yellow);font-weight:700}
+.facts span{font-size:.9rem;color:#eef3ea;letter-spacing:.02em}
+@media (min-width:1181px){
+  .hero-copy h1{font-size:clamp(3rem,5.2vw,5rem)}
+  .hero .lead{max-width:32em}
+}
+@media (max-width:560px){.facts{gap:1.4rem}.facts strong{font-size:1.5rem}}
