@@ -388,3 +388,6 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,.btn:focus-visib
   .hero .lead{max-width:32em}
 }
 @media (max-width:560px){.facts{gap:1.4rem}.facts strong{font-size:1.5rem}}
+
+/* closing banner sentence stays on one line on wider screens */
+@media (min-width:860px){.closing .sub{max-width:none;white-space:nowrap}}
