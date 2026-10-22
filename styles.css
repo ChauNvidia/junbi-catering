@@ -125,8 +125,8 @@ input,select,textarea{font:400 1rem var(--sans);padding:.8em 1em;border:1px soli
 .hero-form .btn{justify-content:center}
 .closing{text-align:center}
 .closing .sub{margin-bottom:1.5rem}
-.gallery{grid-template-columns:repeat(3,1fr);height:220px;grid-template-rows:220px;overflow:hidden}
-.gallery img{height:220px}
+.gallery{grid-template-columns:repeat(5,1fr);height:200px;grid-template-rows:200px;overflow:hidden}
+.gallery img{height:200px}
 @media (max-width:980px){.hero{grid-template-columns:1fr}.hero-visual{padding:20px}.hero-copy{padding:40px 5vw 32px}}
 @media (max-width:560px){.hero-form{grid-template-columns:1fr}}
 
