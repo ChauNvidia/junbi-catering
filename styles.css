@@ -256,3 +256,20 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,.btn:focus-visib
   .hero-visual{order:2;padding:20px}
   .hero-video{order:3;height:min(70vh,520px)}
 }
+
+/* layout v3: hero = words | video; form lives in its own band after Experiences */
+.hero{grid-template-columns:1fr 1fr;min-height:620px}
+.hero-copy{padding:64px 3vw 64px 5vw}
+.hero-copy h1{font-size:clamp(2.2rem,3.6vw,3.4rem)}
+.hero-video{min-height:520px}
+.inquire-band{max-width:none;background:var(--deep);scroll-margin-top:70px}
+.inquire-band .eyebrow{color:var(--yellow)}
+.inquire-band h2{color:#fff}
+.inquire-wrap{max-width:760px;margin:2rem auto 0}
+.inquire-wrap .hero-form{max-width:none;padding:32px;gap:16px}
+.inquire-wrap .form-sub{font-size:1rem}
+@media (max-width:1100px){
+  .hero{grid-template-columns:1fr}
+  .hero-video{order:2;height:min(60vh,480px);min-height:0}
+}
+@media (max-width:560px){.inquire-wrap .hero-form{padding:20px}}

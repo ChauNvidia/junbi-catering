@@ -42,38 +42,6 @@
       <source src="video/event-loop.mp4" type="video/mp4">
     </video>
   </div>
-  <div class="hero-visual" id="inquire">
-    <form id="inquiry" class="form hero-form" novalidate>
-      <h2>Request a custom quote</h2>
-      <p class="form-sub">Tell us about your event and we'll reply with recommendations and a quote. We cater events of 25 or more guests. <strong>We reply within 2 business days.</strong></p>
-      <label>Name *<input name="name" required autocomplete="name"></label>
-      <label>Email *<input name="email" type="email" required autocomplete="email"></label>
-      <label>Type of event *
-        <select name="eventType" id="eventType" required>
-          <option value="">Select type</option>
-          <option>Corporate event</option><option>Wedding</option><option>Birthday</option><option>Private party or celebration</option><option>Other</option>
-        </select>
-      </label>
-      <label>Event date<input name="date" type="date"></label>
-      <label class="wide">Event location *<input name="location" required placeholder="City, venue, or address (helps us plan travel)" autocomplete="off"></label>
-      <label class="wide" id="companyWrap" hidden>Company *<input name="company" id="company" autocomplete="organization"></label>
-      <label>Experience
-        <select name="interest" id="interest">
-          <option value="">Not sure yet</option>
-          <option>On-Site Matcha Bar</option><option>Matcha 101 Workshop</option><option>Matcha Drop-Off Catering</option>
-        </select>
-      </label>
-      <label>Guests (25 minimum) *
-        <select name="guests" required>
-          <option value="">Select range</option>
-          <option>25–50</option><option>51–100</option><option>101–250</option><option>250+</option>
-        </select>
-      </label>
-      <label class="wide">Anything else we should know? (optional)<input name="details" placeholder="Special requests, dietary needs, anything helpful"></label>
-      <button class="btn btn-dark wide" type="submit">Send Inquiry <span aria-hidden="true">→</span></button>
-      <p class="note wide" id="status" role="status"></p>
-    </form>
-  </div>
 </section>
 
 <!-- EXPERIENCES -->
@@ -135,6 +103,43 @@
     </article>
   </div>
   <p class="share-note center">Want to bring Junbi to your team? Download a one-pager for any experience and share it with your manager or teammates.</p>
+</section>
+
+<!-- INQUIRY FORM -->
+<section class="section inquire-band" id="inquire">
+  <p class="eyebrow center">Plan Your Event</p>
+  <h2 class="center">Request a custom quote</h2>
+  <div class="inquire-wrap">
+  <form id="inquiry" class="form hero-form" novalidate>
+    <p class="form-sub">Tell us about your event and we'll reply with recommendations and a quote. We cater events of 25 or more guests. <strong>We reply within 2 business days.</strong></p>
+    <label>Name *<input name="name" required autocomplete="name"></label>
+    <label>Email *<input name="email" type="email" required autocomplete="email"></label>
+    <label>Type of event *
+      <select name="eventType" id="eventType" required>
+        <option value="">Select type</option>
+        <option>Corporate event</option><option>Wedding</option><option>Birthday</option><option>Private party or celebration</option><option>Other</option>
+      </select>
+    </label>
+    <label>Event date<input name="date" type="date"></label>
+    <label class="wide">Event location *<input name="location" required placeholder="City, venue, or address (helps us plan travel)" autocomplete="off"></label>
+    <label class="wide" id="companyWrap" hidden>Company *<input name="company" id="company" autocomplete="organization"></label>
+    <label>Experience
+      <select name="interest" id="interest">
+        <option value="">Not sure yet</option>
+        <option>On-Site Matcha Bar</option><option>Matcha 101 Workshop</option><option>Matcha Drop-Off Catering</option>
+      </select>
+    </label>
+    <label>Guests (25 minimum) *
+      <select name="guests" required>
+        <option value="">Select range</option>
+        <option>25–50</option><option>51–100</option><option>101–250</option><option>250+</option>
+      </select>
+    </label>
+    <label class="wide">Anything else we should know? (optional)<input name="details" placeholder="Special requests, dietary needs, anything helpful"></label>
+    <button class="btn btn-dark wide" type="submit">Send Inquiry <span aria-hidden="true">→</span></button>
+    <p class="note wide" id="status" role="status"></p>
+  </form>
+  </div>
 </section>
 
 <!-- GALLERY -->
