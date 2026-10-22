@@ -224,3 +224,7 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,.btn:focus-visib
 .faq details p{margin:0 0 16px;color:var(--muted)}
 .faq details a{color:var(--green);font-weight:700}
 @media (prefers-color-scheme:dark){.faq details{background:var(--paper)}}
+
+/* footer address */
+.foot-info{display:flex;gap:3rem;flex-wrap:wrap;line-height:1.6}
+.foot-info strong{letter-spacing:.14em;text-transform:uppercase;font-size:.8rem}
