@@ -73,3 +73,9 @@ document.getElementById("inquiry").addEventListener("submit", function (e) {
     "&body=" + encodeURIComponent(body);
   status.textContent = "Thank you! Your email app should open with your inquiry ready to send.";
 });
+
+// People who prefer less motion get a paused video they can play themselves.
+var hv = document.getElementById("heroVideo");
+if (hv && window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  hv.removeAttribute("autoplay"); hv.pause(); hv.controls = true;
+}

@@ -242,3 +242,17 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,.btn:focus-visib
 .dl .plane{transition:transform .25s ease;flex:none}
 .dl:hover .plane,.dl:focus-visible .plane{transform:translate(4px,-4px) rotate(8deg)}
 @media (prefers-reduced-motion:reduce){.dl .plane{transition:none}}
+
+/* hero in thirds: words | video | form */
+.hero{grid-template-columns:.95fr .8fr 1.25fr;min-height:600px}
+.hero-copy{padding:56px 2.5vw 56px 4vw}
+.hero-copy h1{font-size:clamp(2rem,3.2vw,3rem)}
+.hero-video{position:relative;overflow:hidden;background:var(--deep)}
+.hero-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hero-visual{background:var(--deep);padding:24px 3vw 24px 2vw}
+@media (max-width:1100px){
+  .hero{grid-template-columns:1fr}
+  .hero-copy{padding:40px 5vw 24px}
+  .hero-visual{order:2;padding:20px}
+  .hero-video{order:3;height:min(70vh,520px)}
+}
