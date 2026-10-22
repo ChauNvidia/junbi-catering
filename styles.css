@@ -235,3 +235,10 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,.btn:focus-visib
 
 /* section labels: quieter so the headline leads */
 .eyebrow{font-weight:600;letter-spacing:.14em;margin-bottom:.7em}
+
+/* playful share link: paper plane that takes off on hover */
+.dl{display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.dl span{text-decoration:underline;text-decoration-color:#EBD417;text-decoration-thickness:3px;text-underline-offset:4px}
+.dl .plane{transition:transform .25s ease;flex:none}
+.dl:hover .plane,.dl:focus-visible .plane{transform:translate(4px,-4px) rotate(8deg)}
+@media (prefers-reduced-motion:reduce){.dl .plane{transition:none}}
