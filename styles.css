@@ -316,3 +316,10 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,.btn:focus-visib
 .inquire-wrap .hero-form{max-width:none;width:100%;padding:32px;gap:16px}
 .inquire-wrap .form-sub{font-size:1rem}
 @media (max-width:560px){.inquire-wrap .hero-form{padding:20px}}
+
+/* video is always flush right; hero has exactly two columns on desktop */
+@media (min-width:1181px){
+  .hero{grid-template-columns:minmax(0,1fr) calc(var(--hh) * 540 / 930) !important}
+  .hero-video{justify-self:stretch;width:100%;grid-column:2}
+  .hero-copy{grid-column:1}
+}
