@@ -213,3 +213,14 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,.btn:focus-visib
 .dl:hover{color:var(--deep)}
 .card .dl{align-self:flex-start}
 .share-note{margin:2rem auto 0;max-width:640px;color:var(--muted);font-size:1.05rem}
+
+/* FAQ */
+.faq-list{max-width:760px;margin:2rem auto 0}
+.faq details{background:#fff;border:1px solid var(--line);border-left:5px solid var(--yellow);border-radius:12px;margin-bottom:12px;padding:0 20px}
+.faq summary{cursor:pointer;font-weight:700;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.4rem;color:var(--green);line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin:0 0 16px;color:var(--muted)}
+.faq details a{color:var(--green);font-weight:700}
+@media (prefers-color-scheme:dark){.faq details{background:var(--paper)}}
