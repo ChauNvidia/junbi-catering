@@ -1,6 +1,5 @@
 const INQUIRY_EMAIL = "seattle@junbishop.com";
 
-document.getElementById("yr").textContent = new Date().getFullYear();
 
 // Primary buttons jump to the quote form and put the cursor in the first field.
 document.querySelectorAll('a[href="#inquire"]').forEach(function (a) {
